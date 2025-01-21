@@ -13,12 +13,12 @@
     --text-color: #FFFFFF; /* White */
 }
 
-/* Body */
 body {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    color: var(--text-color); /* Keeps text readable */
 }
+
 
 /* Header */
 header {
@@ -63,10 +63,10 @@ header .navbar ul li a:hover {
     color: var(--secondary-color);
 }
 
-/* Hero Section */
 .hero {
     height: 70vh;
-    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    background: url('assets/images/background.png') no-repeat center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +74,7 @@ header .navbar ul li a:hover {
     color: var(--text-color);
     padding: 0 1rem;
 }
+
 
 .hero h1 {
     font-size: 2.5rem;
@@ -87,12 +88,11 @@ header .navbar ul li a:hover {
 
 .hero .btn-primary {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color-color);
     background: var(--secondary-color);
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     font-size: 1rem;
-    transition: background 0.3s;
 }
 
 .hero .btn-primary:hover {
@@ -106,6 +106,7 @@ header .navbar ul li a:hover {
 }
 
 .features .container {
+    background-color: var(--primary-color);
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -150,6 +151,20 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
+/* Footer Logo Styling */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust the logo size */
+    margin-bottom: 10px; /* Spacing between logo and text */
+}
+
+
 footer .footer-nav ul {
     list-style: none;
     display: flex;
@@ -170,3 +185,254 @@ footer .footer-nav ul li a {
 footer .footer-nav ul li a:hover {
     color: var(--secondary-color);
 }
+
+/* Style for all links */
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from parent element */
+}
+
+/* Add hover effect for better user experience */
+a:hover {
+    color: var(--secondary-color); /* Changes color on hover */
+    text-decoration: underline; /* Optional: adds an underline on hover */
+}
+
+
+/* Add hover effect for better user experience */
+a:hover {
+    color: var(--secondary-color); /* Changes color on hover */
+    text-decoration: underline; /* Optional: adds an underline on hover */
+}
+
+.download-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the button to the left */
+    margin: 30px 0; /* Adds more spacing around the container */
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    background-color: #007bff; /* Bright blue background */
+    color: #ffffff; /* White text */
+    font-size: 1.2rem; /* Larger text size */
+    font-weight: bold;
+    text-decoration: none; /* Removes underline */
+    border: 3px solid #007bff; /* Matches button color */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Smooth hover animation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.download-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff; /* Keeps white text on hover */
+    border-color: #0056b3; /* Matches hover background */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+/* News Section Styling */
+.news-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 0; /* Spacing around the section */
+    min-height: 80vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.news-section h2 {
+    color: var(--secondary-color); /* Lime green for the section title */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-item {
+    background: #1a1a1a; /* Dark gray background for news items */
+    border: 1px solid #333; /* Border to define news items */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.news-item h3 {
+    color: var(--secondary-color); /* Lime green for headlines */
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #ccc; /* Light gray for the news text */
+}
+
+.news-item a {
+    color: var(--secondary-color); /* Lime green for links */
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+    color: #fff; /* White on hover */
+}
+
+
+/* About Page Styles */
+.about-page {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header .navbar ul li {
+    margin-right: 20px;
+}
+
+header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header .navbar ul li a:hover {
+    color: lime;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/images/background.png') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #111;
+    color: #ccc;
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    color: lime;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.about-section li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-logo {
+    width: 120px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-nav ul li {
+    margin-right: 20px;
+}
+
+footer .footer-nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer .footer-nav ul li a:hover {
+    color: lime;
+}
+
+/* Links Styling */
+a {
+    color: lime;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
